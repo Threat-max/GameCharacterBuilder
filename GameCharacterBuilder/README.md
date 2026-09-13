@@ -145,16 +145,3 @@ Character c = new HeroBuilder()
         .addSkill("Poison Arrow")
         .build();
 ```
-
----
-
-## Suggested Git commit sequence (3+ commits)
-
-1. `feat: add Character model, enums and constants`
-   — `Character`, `Stats`, `CharacterClass`, `WeaponType`, `ArmorType`, `GameConstants`.
-2. `feat: implement CharacterBuilder interface and HeroBuilder with validation`
-   — `CharacterBuilder`, `HeroBuilder` (fluent setters + fail-fast `build()`).
-3. `feat: add CharacterDirector with Warrior/Mage/Archer presets`
-   — `CharacterDirector`.
-4. `feat: add Main demo and README with Clean Code write-up`
-   — `Main`, `README.md`.
